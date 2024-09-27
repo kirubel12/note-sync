@@ -69,9 +69,9 @@ export default function HeroSection() {
             >
               <div className="mb-4 flex items-center justify-between">
                 <div className="flex items-center space-x-2">
-                  <div className="h-3 w-3 rounded-full bg-destructive" />
-                  <div className="h-3 w-3 rounded-full bg-warning" />
-                  <div className="h-3 w-3 rounded-full bg-success" />
+                  <div className="h-3 w-3 rounded-full bg-red-500" />
+                  <div className="h-3 w-3 rounded-full bg-yellow-500" />
+                  <div className="h-3 w-3 rounded-full bg-green-500" />
                 </div>
                 <Sparkles className="h-6 w-6 text-warning" />
               </div>
