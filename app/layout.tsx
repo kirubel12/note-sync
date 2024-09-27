@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { ThemeProvider } from "@/components/theme-provider";
+import Navbar from "@/components/Navbar";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -13,8 +15,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`font-alexandria container mx-auto m-4 antialiased`}>
-        {children}
+      <body className="font-alexandria container mx-auto mt-4 ">
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <Navbar />
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );
